@@ -1,0 +1,35 @@
+def isWordPresent(paragraph, str): 
+
+      
+
+
+
+    par = paragraph.split(" ") 
+
+  
+
+    for i in par: 
+
+
+        if (i == str): 
+
+            return True
+
+    return False
+
+  
+
+
+par = input()
+
+str = input()
+
+  
+
+if (isWordPresent(par, str)): 
+
+    print("YES") 
+
+else: 
+
+    print("NO")
