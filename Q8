@@ -1,0 +1,22 @@
+def mix_string(s1, s2):
+    p2 = s2[:1]
+    
+    first_char = s1[:1] + p2.upper()
+    
+    q2 = s2[int(len(s2) / 2):int(len(s2) / 2) + 1]
+
+    middle_char = s1[int(len(s1) / 2):int(len(s1) / 2) + 1] + q2.upper()
+    
+    r2 = s2[len(s2)-1]
+
+    last_char = s1[len(s1) - 1] + r2.upper()
+
+    res = first_char + middle_char + last_char
+
+    print(res)
+
+s1 = input()
+
+s2 = input()
+
+mix_string(s1, s2)
